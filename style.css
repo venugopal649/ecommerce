@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    height: 50vh;
+    background: url('YADAV.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color:black;
+    text-align: center;
+}
+
+#hero .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#about, #projects, #contact {
+    background-color: #f4f4f4;
+    margin: 20px 0;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #hero .hero-content h2 {
+        font-size: 2rem;
+     }
+ }
